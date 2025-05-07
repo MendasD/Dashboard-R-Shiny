@@ -10,7 +10,7 @@ library(plotly)
 library(shinycssloaders)
 
 # Charger les données depuis Excel
-plats_data <- read_excel("../Data/plats.xlsx")
+plats_data <- read_excel("Data/plats.xlsx")
 plats_data$note <- as.numeric(plats_data$note)
 
 # Fonction pour afficher les étoiles
@@ -133,7 +133,6 @@ repas_server <- function(id){
     
     lapply(plats_data$id_plat, function(id_val) {
       observeEvent(input[[paste0("plat_", id_val)]], {
-        print(paste("Click d"tect" pour le plat d'id : ", id_val))  # TEST
         
         plat <- plats_data[plats_data$id_plat == id_val, ]
         

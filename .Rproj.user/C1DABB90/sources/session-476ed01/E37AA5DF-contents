@@ -9,11 +9,11 @@ library(lubridate)
 library(readxl)
 
 # Chargement des données
-commande <- read.csv("../Data/commandes.csv")
-livraison <- read.csv("../Data/livraisons.csv")
-plat <- read_excel("../Data/plat.xlsx")
+commande <- read.csv("Data/commandes.csv")
+livraison <- read.csv("Data/livraisons.csv")
+plat <- read_excel("Data/plat.xlsx")
 
-regions_livraison <- st_read("E:/Ecole/AS2/Semestre2/SIG/Donnnees_cours/Données/SEN_adm/SEN_adm1.shp")
+regions_livraison <- st_read("Data/SEN_adm1/SEN_adm1.shp")
 
 regions_livraison <- regions_livraison[, c("ID_region", "NAME_1", "geometry")]
 colnames(regions_livraison)[1:2] <- c("ID_region", "region")
@@ -36,12 +36,7 @@ format_abbr <- function(x) {
 # UI
 livraison_ui <- function(id){
   ns <- NS(id)
-  # dashboardHeader(title = "Suivi des livraisons"),
-  # dashboardSidebar(
-  #   sidebarMenu(
-  #     menuItem("Tableau de bord", tabName = "dashboard", icon = icon("dashboard"))
-  #   )
-  # ),
+  
   fluidPage(
     tags$style(HTML(".value-box .small-box p { font-weight: bold; font-size: 40px; color: #000; }")),
   

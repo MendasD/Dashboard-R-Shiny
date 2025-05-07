@@ -10,25 +10,6 @@ library(lubridate)
 # UI
 salaire_ui <- function(id){
   ns <- NS(id)
-
-#   dashboardPage(
-#   skin = "blue",
-#   dashboardHeader(title = "Masse Salariale - Tchop et Yamo"),
-#   
-#   dashboardSidebar(
-#     sidebarMenu(
-#       menuItem("Masse Salariale", tabName = "main", icon = icon("money-bill-wave"))
-#     )
-#   ),
-#   
-#   dashboardBody(
-#     tabItems(
-#       tabItem(tabName = "main",
-#               
-#       )
-#     )
-#   )
-# )
   
   fluidPage(
     div(
@@ -100,7 +81,7 @@ salaire_server <- function(id){
   
   employes <- reactive({
     tryCatch({
-      df <- read_excel("../Data/emplois.xlsx") %>%
+      df <- read_excel("Data/emplois.xlsx") %>%
         mutate(annee_arrivee = as.integer(date_arrivee))
       
       updateSelectInput(session, "region",

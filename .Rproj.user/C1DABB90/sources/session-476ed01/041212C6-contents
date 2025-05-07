@@ -24,11 +24,11 @@ source("modules/repas.R")
 source("modules/livraison.R")
 
 #Chargement des donnees de livraison
-commande_livraison <- read.csv("../Data/commandes.csv")
-livraison <- read.csv("../Data/livraisons.csv")
-plat_livraison <- read_excel("../Data/plat.xlsx")
+commande_livraison <- read.csv("Data/commandes.csv")
+livraison <- read.csv("Data/livraisons.csv")
+plat_livraison <- read_excel("Data/plat.xlsx")
 
-regions_livraison <- st_read("../Data/SEN_adm1/SEN_adm1.shp")
+regions_livraison <- st_read("Data/SEN_adm1/SEN_adm1.shp")
 
 
 # Liste exhaustive des régions et de quelques villes associées
@@ -51,7 +51,7 @@ regions_villes <- list(
 )
 
 # Base des employés
-df <- readxl::read_excel("../Data/employes.xlsx")
+df <- readxl::read_excel("Data/employes.xlsx")
 
 # === Données d’exemple ===
 data <- data.frame(
@@ -505,7 +505,7 @@ server <- function(input, output, session) {
   
   
   # Onglet Accueil
-  base_employes <- readxl::read_excel("../Data/employes.xlsx")
+  base_employes <- readxl::read_excel("Data/employes.xlsx")
   
   df_employes <- reactive({
     if (is.null(selected_region()) || length(selected_region()) == 0) {
@@ -607,7 +607,7 @@ server <- function(input, output, session) {
   })
   
   # Visualisations sur la carte
-  region_sf <-  st_read("../Data/SEN_adm1/SEN_adm1.shp", quiet = TRUE)
+  region_sf <-  st_read("Data/SEN_adm1/SEN_adm1.shp", quiet = TRUE)
   
   salaire_regions <- base_employes %>%
       group_by(région) %>%
@@ -668,7 +668,7 @@ server <- function(input, output, session) {
  
   
   #================
-  # Filtrage des nœuds à afficher
+  # Filtrage des noeuds à afficher
   nodes_region <- reactive({
     equipe_ids <- data$id[data$region == input$region]
     dg_id <- data$id[data$poste == "Directeur Général"]

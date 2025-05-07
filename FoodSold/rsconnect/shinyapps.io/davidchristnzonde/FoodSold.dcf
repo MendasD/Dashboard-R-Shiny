@@ -1,0 +1,12 @@
+name: FoodSold
+title: FoodSold
+username: davidchristnzonde
+account: davidchristnzonde
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14708349
+bundleId: 10247572
+url: https://davidchristnzonde.shinyapps.io/FoodSold/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
