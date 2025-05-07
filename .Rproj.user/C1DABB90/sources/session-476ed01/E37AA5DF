@@ -1,0 +1,26 @@
+{
+    "id": "E37AA5DF",
+    "path": "E:/Ecole/AS2/Semestre2/Tableau de bord/R/Groupe_CAMER_Shiny/FoodSold/modules/livraison.R",
+    "project_path": "FoodSold/modules/livraison.R",
+    "type": "r_source",
+    "hash": "3974590949",
+    "contents": "",
+    "dirty": false,
+    "created": 1746152663420.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "13,22",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1746640301,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1746640301396,
+    "read_only": false,
+    "read_only_alternatives": []
+}

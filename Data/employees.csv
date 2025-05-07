@@ -1,0 +1,11 @@
+id_employe,nom,sexe,age,nationalite,region,poste,type_contrat,salaire,photo_url,avis_moyen
+E0001,Laurie Hanna,F,25,Sénégalaise,Centre,Livreur,Freelance,4000,https://placeimg.com/199/935/any,4.36
+E0002,Monique Brown,H,28,Camerounaise,Littoral,Serveur,Freelance,7690,https://dummyimage.com/175x157,4.15
+E0003,Jacob Daugherty,F,25,Camerounaise,Littoral,Serveur,CDD,3210,https://www.lorempixel.com/127/191,4.54
+E0004,Julie Mueller,F,49,Camerounaise,Dakar,Chef de cuisine,CDD,7090,https://placeimg.com/607/583/any,4.69
+E0005,Sharon Nelson,H,47,Camerounaise,Dakar,Responsable Livraison,CDI,7260,https://placekitten.com/455/584,4.07
+E0006,Claudia Sanders,H,32,Sénégalaise,Dakar,Serveur,CDD,7430,https://www.lorempixel.com/801/816,4.12
+E0007,Eduardo Wagner,H,29,Camerounaise,Thies,Responsable Livraison,CDD,3140,https://www.lorempixel.com/61/764,3.68
+E0008,Jack Diaz,H,40,Camerounaise,Dakar,Livreur,CDI,2600,https://placekitten.com/1005/869,4.35
+E0009,John Gaines,H,26,Sénégalaise,Centre,Livreur,CDI,2960,https://placekitten.com/369/254,3.73
+E0010,Ashley Haley,H,23,Camerounaise,Littoral,Chef de cuisine,CDD,7730,https://placeimg.com/226/162/any,3.79
