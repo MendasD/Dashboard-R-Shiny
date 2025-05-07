@@ -6,7 +6,7 @@ library(ggplot2)
 library(dplyr)
 library(plotly)
 
-employes <- read_excel("Data/employees.xlsx")
+employes <- read_excel("Data/employeees.xlsx")
 
 employes_ui <- function(id){
   ns <- NS(id)

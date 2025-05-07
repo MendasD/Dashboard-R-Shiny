@@ -5,7 +5,7 @@ account: davidchristnzonde
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 14708349
-bundleId: 10247572
+bundleId:
 url: https://davidchristnzonde.shinyapps.io/FoodSold/
 version: 1
 asMultiple: FALSE

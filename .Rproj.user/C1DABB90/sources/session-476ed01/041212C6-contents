@@ -73,7 +73,7 @@ data <- data.frame(
   ),
   sexe = c("M", "M", "F", "M", "M", "M", "F", "M", "M", "M", "F", "M", "M", "M", "F", "M", "M", "M"),
   region = c(rep("Dakar", 6), rep("Thiès", 6), rep("Saint-Louis", 6)),
-  photo = paste0("a (", 1:18, ")", ".jpg"),
+  photo = paste0("", 1:18, ".jpg"),
   avis = round(runif(18, 3.5, 5), 2),
   age = sample(30:55, 18, replace = TRUE),
   nationalite = rep(c("Sénégalaise", "Camerounaise"), 9),
