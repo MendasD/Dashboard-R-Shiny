@@ -42,7 +42,7 @@ format_markdown_console <- function(md_text) {
 
 get_api <- function(modele_ia){
   if(modele_ia == "Groq"){
-    return("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")
+    return("")
   }else{
     return("sk-9fc3a00ae92545cc980196cd9c258d67")
   }
